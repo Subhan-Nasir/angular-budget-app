@@ -14,6 +14,16 @@
         height: 100%;
         width: 100%;
 
+        .income-heading, .expenses-heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+
+
         .income-column, .expenses-column{
             display: flex;
             flex-direction: column;

@@ -1,0 +1,60 @@
+@import "../../../main-styles.scss";
+
+.is-primary{
+    background-color: $dark-purple;
+    background-image: linear-gradient(45deg, #09203f 1%, #537895 100%);
+
+}
+
+.is-success{
+    background-color: darkgreen;
+    background-image: linear-gradient(45deg, #0ba360 0%, #3cba92 100%);
+    color: white;
+
+
+} 
+
+input{
+    background-color: $light-grey;
+    color: black;
+    
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Lato' sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+
+
+    height: 40px;
+    max-width: 70px;
+    padding: 1rem 2rem;
+
+    background-color: $primary;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+
+button:disabled{
+    background-color: $dark-purple;
+    background-image: none;
+    color: £light-grey;
+    cursor: not-allowed;
+}
+
+button:hover:enabled, button:focus:enabled{
+
+    background-color: $lapis-lazuli;
+    background-image: linear-gradient(45deg, #09203f 100%, #537895 100%);
+
+    
+    
+    
+    cursor: pointer;
+}

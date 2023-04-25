@@ -1,6 +1,12 @@
 # BudgetApp
-(Not yet finished) Calculate your monthly budget based on your incomes and expenses.
+Calculate your monthly budget based on your incomes and expenses.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+
+## Screenshots
+
+![](screenshot-1.png)
+![](screenshot-2.png)
+![](screenshot-3.png)
 
 ## Development server
 

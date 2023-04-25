@@ -2,11 +2,16 @@
     <div class="budget-items-container">
 
         <div class="income-column">
-            <h1>Income</h1>
+            <h1 class="income-heading">Income</h1>
             <div class="budget-items">
 
                 <div *ngFor="let item of budgetItems">
-                    <app-budget-item-card [item]="item" *ngIf="item.amount >=0" (xButtonClick)="onDeleteButtonClicked(item)" >
+                    <app-budget-item-card 
+                    [item]="item" 
+                    *ngIf="item.amount >=0" 
+                    (xButtonClick)="onDeleteButtonClicked(item)"
+                    (cardClick)="onCardClicked(item)"    
+                 >
 
                     </app-budget-item-card>
                 </div>
@@ -16,10 +21,15 @@
         </div>
 
         <div class="expenses-column">
-            <h1>Expenses</h1>
+            <h1 class="expenses-heading">Expenses</h1>
             <div class="budget-items">
                 <div *ngFor="let item of budgetItems">
-                    <app-budget-item-card [item]="item" *ngIf="item.amount <=0" (xButtonClick)="onDeleteButtonClicked(item)">
+                    <app-budget-item-card 
+                        [item]="item" 
+                        *ngIf="item.amount <=0" 
+                        (xButtonClick)="onDeleteButtonClicked(item)"
+                        (cardClick)="onCardClicked(item)"
+                    >
         
                     </app-budget-item-card>
                 </div>
